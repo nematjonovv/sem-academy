@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #cd2e3a;
+  --secondary: #003478;
+  --tertiary: #001a3a;
+  --neutral: #ffffff;
+}
+
+@theme inline {
+  --font-jakarta: var(--font-jakarta);
+  --font-vietnam: var(--font-vietnam);
+}
