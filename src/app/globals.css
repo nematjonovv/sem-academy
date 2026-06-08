@@ -1,13 +1,46 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 :root {
   --primary: #cd2e3a;
   --secondary: #003478;
-  --tertiary: #001a3a;
+  --tertiary: #001A3A;
   --neutral: #ffffff;
 }
 
 @theme inline {
   --font-jakarta: var(--font-jakarta);
   --font-vietnam: var(--font-vietnam);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track (orqa fon) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb (siljituvchi qism) */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary)/80;
 }
