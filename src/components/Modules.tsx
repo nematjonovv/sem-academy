@@ -96,7 +96,7 @@ function Modules() {
   ];
   const [openId, setOpenId] = useState<string | null>(null);
   return (
-    <section className="py-16 min-h-screen flex flex-col justify-center container mx-auto px-5">
+    <section id="module" className="py-16 min-h-screen flex flex-col justify-center container mx-auto px-5">
       <h2 className="font-jakarta font-extrabold text-black text-3xl  mb-10 flex items-center">
         4 ta modul <span className="w-2 h-2 inline-block bg-black rounded-full mx-3"></span> <span className="text-(--primary)">40+ dars</span> <span className="w-2 h-2 inline-block bg-black rounded-full mx-3"></span> 3 oy
       </h2>

@@ -9,9 +9,9 @@ const iconMap: Record<string, LucideIcon> = {
 
 const stats = [
   { icon: "Users", value: "500+", label: "O'quvchilar" },
-  { icon: "Star", value: "2 yil", label: "Tajriba (yil)" },
+  { icon: "Star", value: "12 yil", label: "Tajriba" },
   { icon: "PlayCircle", value: "100+", label: "Video darslar" },
-  { icon: "BookOpen", value: "50+", label: "Materiallar" },
+  { icon: "BookOpen", value: "PhD, Dotsent", label: "" },
 ];
 
 export default function Stats() {

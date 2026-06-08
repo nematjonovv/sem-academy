@@ -44,7 +44,7 @@ function Features() {
   ];
 
   return (
-    <section className="min-h-screen bg-(--tertiary) flex items-center py-16">
+    <section id="aboutcourse" className="min-h-screen bg-(--tertiary) flex items-center py-16">
       <div className="container mx-auto px-5">
         <p className="text-white font-extrabold font-jakarta text-4xl mb-10">
           Kursda nimalar bo'ladi?

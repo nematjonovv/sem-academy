@@ -6,8 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 function Header() {
   const menuData = [
     {
-      name: "Kurslar",
-      link: "courses"
+      name: "Kurs haqida",
+      link: "aboutcourse"
+    },
+    {
+      name: "Modul",
+    link: "module"
     },
     {
       name: "Natijalar",

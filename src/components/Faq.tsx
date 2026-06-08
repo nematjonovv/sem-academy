@@ -26,7 +26,7 @@ function Faq() {
   ];
 
   return (
-    <section className="py-16 container mx-auto px-5">
+    <section id="faq" className="py-16 container mx-auto px-5">
       <h2 className="font-jakarta font-extrabold text-black text-3xl  mb-10 flex items-center">
         Tez-tez so'raladigan savollar
       </h2>

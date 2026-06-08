@@ -4,7 +4,7 @@ import CertCard from "./CertCard";
 
 function DesktopSertificates() {
   return (
-    <div className="w-full mt-20">
+    <section id="results" className="w-full mt-20">
       <div className="container px-5 flex justify-between items-center">
         <h2 className="text-2xl md:text-4xl font-jakarta font-extrabold  text-black">
           O'quvchilarning <span className="text-(--primary)">TOPIK</span> <br className="md:hidden" /> natijalari
@@ -32,7 +32,7 @@ function DesktopSertificates() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
