@@ -21,7 +21,7 @@ export default function ScrollToTop() {
   if (!visible) return null
 
   return (
-    <button onClick={scrollToTop} className="fixed bottom-4 right-4 bg-(--primary) text-[#1A1A1A] p-2 rounded-full shadow-lg hover:bg-(--primary)/90 transition-colors cursor-pointer">
+    <button onClick={scrollToTop} className="fixed bottom-4 right-4 bg-(--primary) text-white p-2 rounded-full shadow-lg hover:bg-(--primary)/90 transition-colors cursor-pointer">
       <ArrowUp />
     </button>
   )
