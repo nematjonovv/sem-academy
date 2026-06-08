@@ -19,7 +19,7 @@ function CertCard({ cert }: { cert: Certificate }) {
           alt={`${cert.name} - ${cert.level} ${cert.grade}`}
           fill
           className="object-cover"
-          sizes="288px"
+          sizes="350px"
         />
       </div>
 

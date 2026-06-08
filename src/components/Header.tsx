@@ -2,6 +2,7 @@
 import Logo from "../ui/Logo";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 function Header() {
   const menuData = [
     {
@@ -55,24 +56,32 @@ function Header() {
         </button>
       </div>
 
-      {isOpen && (
-        <div className="md:hidden container flex flex-col gap-4 pb-5">
-          {menuData.map((e, i) => (
-            <a key={i} href={`#${e.link}`}
-              onClick={() => setIsOpen(false)}
-              className="font-medium text-[#5A403F] font-vietnam text-sm hover:text-(--primary) transition-colors">
-              {e.name}
-            </a>
-          ))}
-          <a href="#contact"
-            onClick={() => setIsOpen(false)}
-            className="
-        bg-(--primary) text-white font-vietnam text-sm
-        py-2 px-4 rounded-md hover:bg-(--primary)/90 transition-colors text-center">
-            Bog'lanish
-          </a>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="md:hidden overflow-hidden"
+          >
+            <div className="container flex flex-col gap-4 pb-5">
+              {menuData.map((e, i) => (
+                <a key={i} href={`#${e.link}`}
+                  onClick={() => setIsOpen(false)}
+                  className="font-medium text-[#5A403F] font-vietnam text-sm hover:text-(--primary) transition-colors">
+                  {e.name}
+                </a>
+              ))}
+              <a href="#contact"
+                onClick={() => setIsOpen(false)}
+                className="bg-(--primary) text-white font-vietnam text-sm py-2 px-4 rounded-md hover:bg-(--primary)/90 transition-colors text-center">
+                Bog'lanish
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
