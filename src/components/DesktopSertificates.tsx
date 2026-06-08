@@ -1,17 +1,18 @@
 import Link from "next/link";
 import certificates from "../data/certificates";
 import CertCard from "./CertCard";
+import { ArrowDown } from "lucide-react";
 
 function DesktopSertificates() {
   return (
     <div className="w-full mt-50">
       <div className="container flex justify-between items-center">
-        <h2 className="text-4xl font-jakarta font-extrabold  text-black mb-5">
+        <h2 className="text-2xl md:text-4xl font-jakarta font-extrabold  text-black">
           O'quvchilarning <span className="text-(--primary)">TOPIK</span> natijalari
         </h2>
 
-        <Link href="#" className="text-(--neutral) bg-(--primary) font-vietnam text-sm py-3 px-6 rounded-md hover:bg-(--primary)/90 transition-colors">
-          Baxtlilar orasida bo'lishi uchun siz ham yoziling
+        <Link href="#" className="text-(--neutral) bg-(--primary) font-vietnam text-sm py-3 px-6 rounded-md hover:bg-(--primary)/90 transition-colors flex ">
+          Hoziroq yoziling
         </Link>
       </div>
       <div
