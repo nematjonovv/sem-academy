@@ -29,9 +29,9 @@ function CertCard({ cert }: { cert: Certificate }) {
           onClick={() => setOpen(false)}
         >
           <div
-            className="relative h-screen flex justify-center items-center rounded-2xl overflow-hidden"
+            className="relative flex justify-center items-center rounded-2xl overflow-hidden"
           >
-            <img src={cert.image} className="object-contain" alt={`${cert.name} - ${cert.level} ${cert.grade}`} />
+            <img src={cert.image} className="object-contain h-screen" alt={`${cert.name} - ${cert.level} ${cert.grade}`} />
           </div>
         </div>,
         document.body
