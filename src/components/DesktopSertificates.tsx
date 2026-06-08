@@ -6,12 +6,12 @@ import { ArrowDown } from "lucide-react";
 function DesktopSertificates() {
   return (
     <div className="w-full mt-50">
-      <div className="container flex justify-between items-center">
+      <div className="container px-5 flex justify-between items-center">
         <h2 className="text-2xl md:text-4xl font-jakarta font-extrabold  text-black">
-          O'quvchilarning <span className="text-(--primary)">TOPIK</span> natijalari
+          O'quvchilarning <span className="text-(--primary)">TOPIK</span> <br className="md:hidden" /> natijalari
         </h2>
 
-        <Link href="#" className="text-(--neutral) bg-(--primary) font-vietnam text-sm py-3 px-6 rounded-md hover:bg-(--primary)/90 transition-colors flex ">
+        <Link href="#" className="text-(--neutral) bg-(--primary) font-vietnam text-sm py-3 px-6 rounded-md hover:bg-(--primary)/90 transition-colors flex whitespace-nowrap">
           Hoziroq yoziling
         </Link>
       </div>
