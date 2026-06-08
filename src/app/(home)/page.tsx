@@ -1,4 +1,5 @@
 import CountdownTimer from "@/src/components/CountDownTimer";
+import DesktopSertificates from "@/src/components/DesktopSertificates";
 import Goals from "@/src/components/Goals";
 import Header from "@/src/components/Header";
 import Hero from "@/src/components/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       </div>
       <Stats />
       <Goals />
+      <DesktopSertificates />
     </div>
   );
 }

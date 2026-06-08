@@ -4,9 +4,8 @@ function Hero() {
   return (
     <section className="container grid grid-cols-1 md:grid-cols-2 pt-25 px-5 h-screen">
       <div className="order-2 md:order-1 flex flex-col justify-center py-2 md:py-5">
-        <p className="font-extrabold text-7xl text-center md:text-8xl md:text-start font-jakarta md:static md:mt-0 md:shadow-none md:bg-transparent -mt-24 relative z-10 bg-white/70 backdrop-blur-sm shadow-[0_-20px_40px_20px_rgba(255,255,255,0.7)] pb-4 px-2">
-          Koreys tilini
-          <span className="text-(--primary)"> o'rganing </span>
+        <p className="font-extrabold text-4xl text-center md:text-7xl md:text-start font-jakarta md:static md:mt-0 md:shadow-none md:bg-transparent -mt-24 relative z-10 bg-white/70 backdrop-blur-sm shadow-[0_-20px_40px_20px_rgba(255,255,255,0.7)] pb-4 px-2">
+          Koreys tilini o'rganib <span className="text-(--primary)"> 3 oyda TOPIK  </span>  darajasiga chiqing
         </p>
         <div className="mt-3 flex justify-around md:justify-center flex-col md:items-start">
           <div className="md:hidden">  
