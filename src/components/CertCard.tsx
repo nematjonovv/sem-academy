@@ -25,20 +25,13 @@ function CertCard({ cert }: { cert: Certificate }) {
 
       {open && createPortal(
         <div
-          className="fixed inset-0 z-9999 bg-black/80 flex items-center justify-center py-10"
+          className="fixed inset-0 z-9999 bg-black/80 flex items-center justify-center py-10 overflow-hidden"
           onClick={() => setOpen(false)}
         >
           <div
-            className="relative max-w-2xl h-screen w-full rounded-2xl overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
+            className="relative h-screen flex justify-center items-center rounded-2xl overflow-hidden"
           >
-            <Image
-              src={cert.image}
-              alt={`${cert.name} - ${cert.level} ${cert.grade}`}
-              width={800}
-              height={600}
-              className="w-full h-auto object-contain"
-            />
+            <img src={cert.image} className="object-contain" alt={`${cert.name} - ${cert.level} ${cert.grade}`} />
           </div>
         </div>,
         document.body
