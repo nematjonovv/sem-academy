@@ -8,7 +8,7 @@ function Hero() {
           Koreys tilini
           <span className="text-(--primary)"> o'rganing </span>
         </p>
-        <div className="mt-3 flex justify-around md:justify-center md:flex-col md:items-start">
+        <div className="mt-3 flex justify-around md:justify-center flex-col md:items-start">
           <div className="md:hidden">  
             <CountdownTimer />
           </div>
@@ -33,6 +33,7 @@ function Hero() {
             <a href="#result"
               className="
               mt-5 
+              text-center
               bg-transparent 
               text-(--tertiary)
               border-(--tertiary)              
