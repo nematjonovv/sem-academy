@@ -10,6 +10,7 @@ html {
   --secondary: #003478;
   --tertiary: #001A3A;
   --neutral: #ffffff;
+  --secondary-neutral: #F9F9F9;
 }
 
 @theme inline {

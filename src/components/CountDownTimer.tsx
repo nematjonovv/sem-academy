@@ -94,7 +94,7 @@ export default function CountdownTimer({
   ];
 
   return (
-    <div className="container text-center  gap-3 py-5 rounded-3xl md:-mt-24 md:relative md:z-10 md:bg-white/70 md:backdrop-blur-md md:shadow-[0_-20px_40px_20px_rgba(255,255,255,1)]">
+    <div className="container text-center gap-3 py-5 rounded-3xl md:-mt-24 md:relative md:z-10 md:bg-(--secondary-neutral) md:backdrop-blur-md md:shadow-[0_-20px_40px_20px_rgba(249,249,249)]">
       <p className="text-[#5A403F] text-center mb-5 font-semibold font-jakarta text-2xl tracking-wide uppercase">
         {title}
       </p>
